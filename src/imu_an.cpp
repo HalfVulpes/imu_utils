@@ -18,6 +18,10 @@
 #include <ros/ros.h>
 #include <sensor_msgs/Imu.h>
 
+#include <fstream>
+#include <vector>
+#include <string>
+
 std::mutex m_buf;
 
 std::queue< sensor_msgs::ImuConstPtr > imu_buf;
